@@ -171,13 +171,13 @@
         <format>[%Tag%]</format>
       </source>
       <source type="Book">
-        <format>{%CitationPrefix%}%BibOrder%{, vol. %CitationVolume%}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}%BibOrder%{, Т. %CitationVolume%}{, %CitationPages:c. :cc. %}{%CitationSuffix%}</format>
       </source>
       <source type="BookSection">
         <format>{%BibOrder%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%CitationPrefix%}%BibOrder%{, vol. %CitationVolume%}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}%BibOrder%{, Т. %CitationVolume%}{, %CitationPages:c. :cc. %}{%CitationSuffix%}</format>
       </source>
       <source type="ArticleInAPeriodical">
         <format>{%BibOrder%}</format>
@@ -221,7 +221,8 @@
         <format>[%Tag%]</format>
       </source>
       <source type="Book">
-        <format>{%CitationPrefix%}{%Author:2|Editor:3|"[Anonymous]"%.}{ %Title|ShortTitle%.{ %Edition:o% ed.}{ Vol %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{; %Year%}}}{ %Publisher%{; %Year%}}{ %Year%}.{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
+        <format lcid="1033">{%CitationPrefix%}{%Author:2|Editor:3|"[Anonymous]"%.}{ %Title|ShortTitle%.{ %Edition:o% изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{; %Year%}}}{ %Publisher%{; %Year%}}{ %Year%}.{, %CitationPages:с. :сс. %}{%CitationSuffix%}</format>
+        <format lcid="1049">{%CitationPrefix%}{%Author:2|Editor:3|"[Anonymous]"%.}{ %Title|ShortTitle%.{ %Edition:o% изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{; %Year%}}}{ %Publisher%{; %Year%}}{ %Year%}.{, %CitationPages:с. :сс. %}{%CitationSuffix%}</format>
       </source>
     </footnotecitation>
     <bibliography>
@@ -248,8 +249,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% ed.}{ Vol %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% pp.}</format>
-          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition%-е изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}</format>
+          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}</format>
+          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition:o% изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}</format>
         </column>
 		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
@@ -262,8 +263,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%{. %Edition:o% ed.}{. Vol %Volume%.}{ // In: %BookTitle%}{ / Ed. by %BookAuthor:233%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages:P. :pp. %}.</format>
-          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%{. %Edition%-е изд.}{. Т. %Volume%.}{ // В кн.: %BookTitle%}{ / ред. %BookAuthor:249%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
+          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%{. %Edition:o% изд.}{. Т. %Volume%.}{ // В кн.: %BookTitle%}{ / ред. %BookAuthor:233%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
+          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%{. %Edition:o% изд.}{. Т. %Volume%.}{ // В кн.: %BookTitle%}{ / ред. %BookAuthor:249%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
         </column>
 		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
@@ -276,7 +277,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233%. }{%Title%}{ // %JournalName%}{, Vol. %Volume%}{, No. %Issue%}{,{ %Month:s%} %Year%}{ . %Pages:P. :pp. %}.</format>
+          <format lcid="1033">{%Author:233%. }{%Title%}{ // %JournalName%}{, Т. %Volume%}{, № %Issue%}{,{ %Month:s%} %Year%}{ . С. %Pages%}.</format>
           <format lcid="1049">{%Author:249%. }{%Title%}{ // %JournalName%}{, Т. %Volume%}{, № %Issue%}{,{ %Month:s%} %Year%}{ . С. %Pages%}.</format>
         </column>
 		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
@@ -290,7 +291,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233%.}{ %Title%}{ // %PeriodicalTitle%.}{{ %Month:s%} %Year%.}{ Vol. %Volume%.}{ No. %Issue%.}{ %Pages:P. :pp. %.}</format>
+          <format lcid="1033">{%Author:233%.}{ %Title%}{ // %PeriodicalTitle%.}{{ %Month:s%} %Year%.}{ Т. %Volume%.}{ № %Issue%.}{ С. %Pages%.}</format>
           <format lcid="1049">{%Author:249%.}{ %Title%}{ // %PeriodicalTitle%.}{{ %Month:s%} %Year%.}{ Т. %Volume%.}{ № %Issue%.}{ С. %Pages%.}</format>
         </column>
 		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
@@ -304,7 +305,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233%.}{ %Title%}{ // %ConferenceName%.}{ %City|StateProvince|CountryRegion%.}{ %StateProvince|CountryRegion%.}{ %CountryRegion%.}{{ %Month:s%} %Year%.}{ Vol. %Volume%.}{ %Pages:P. :pp. %.}.</format>
+          <format lcid="1033">{%Author:233%.}{ %Title%}{ // %ConferenceName%.}{ %City|StateProvince|CountryRegion%.}{ %StateProvince|CountryRegion%.}{ %CountryRegion%.}{{ %Month:s%} %Year%.}{ Т. %Volume%.}{ С. %Pages%.}.</format>
           <format lcid="1049">{%Author:249%.}{ %Title%}{ // %ConferenceName%.}{ %City|StateProvince|CountryRegion%.}{ %StateProvince|CountryRegion%.}{ %CountryRegion%.}{{ %Month:s%} %Year%.}{ Т. %Volume%.}{ С. %Pages%.}.</format>
         </column>
         <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
@@ -318,7 +319,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233%. }{%Title%, }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% pp.}</format>
+          <format lcid="1033">{%Author:233%. }{%Title%, }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% с.}</format>
           <format lcid="1049">{%Author:249%. }{%Title%, }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% с.}</format>
         </column>
         <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
@@ -378,7 +379,7 @@
           <format lcid="1049">{%Inventor:249|Author:249%. }{%Title%,}{ %Type%}{ %PatentNumber%}{,{ %Month:s%{ %Day%,}} %Year%}.</format>
         </column>
         <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
-      </source>
+      </source> 
       <source type="Misc">
         <column id="1">
           <halign>center</halign>
@@ -390,7 +391,7 @@
           <valign>top</valign>
 <!--      <format lcid="1033">{%Author:133%. }{%Title%}{,{ %Month:s%{ %Day%,}} %Year%}{, %Comments%}.</format>
           <format lcid="1049">{%Author:149%. }{%Title%}{,{ %Month:s%{ %Day%,}} %Year%}{, %Comments%}.</format> -->
-          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% ed.}{ Vol %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% pp.}{ %Comments%.}</format>
+          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition%-е изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}{ %Comments%.}</format>
           <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition%-е изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
@@ -533,37 +534,37 @@
     </namelists>
     <strings>
       <months>
-        <month number="1">Jan</month>
-        <month number="2">Feb</month>
-        <month number="3">Mar</month>
-        <month number="4">Apr</month>
-        <month number="5">May</month>
-        <month number="6">Jun</month>
-        <month number="7">Jul</month>
-        <month number="8">Aug</month>
-        <month number="9">Sep</month>
-        <month number="10">Oct</month>
-        <month number="11">Nov</month>
-        <month number="12">Dec</month>
+        <month number="1">Янв</month>
+        <month number="2">Фев</month>
+        <month number="3">Мар</month>
+        <month number="4">Апр</month>
+        <month number="5">Май</month>
+        <month number="6">Июн</month>
+        <month number="7">Июл</month>
+        <month number="8">Авг</month>
+        <month number="9">Сен</month>
+        <month number="10">Окт</month>
+        <month number="11">Ноя</month>
+        <month number="12">Дек</month>
       </months>
       <sourcetypes>
-        <sourcetype type="Art">Art</sourcetype>
-        <sourcetype type="ArticleInAPeriodical">Article</sourcetype>
-        <sourcetype type="Book">Book</sourcetype>
-        <sourcetype type="BookSection">Book Section</sourcetype>
-        <sourcetype type="Case">Case</sourcetype>
-        <sourcetype type="ConferenceProceedings">Conference Proceedings</sourcetype>
-        <sourcetype type="DocumentFromInternetSite">Electronic Document</sourcetype>
-        <sourcetype type="ElectronicSource">Electronic Source</sourcetype>
-        <sourcetype type="Film">Film</sourcetype>
-        <sourcetype type="InternetSite">Web Site</sourcetype>
-        <sourcetype type="Interview">Interview</sourcetype>
-        <sourcetype type="JournalArticle">Journal Article</sourcetype>
-        <sourcetype type="Misc">Miscellaneous</sourcetype>
-        <sourcetype type="Patent">Patent</sourcetype>
-        <sourcetype type="Performance">Performance</sourcetype>
-        <sourcetype type="Report">Report</sourcetype>
-        <sourcetype type="SoundRecording">Sound Recording</sourcetype>
+        <sourcetype type="Art">Статья</sourcetype>
+        <sourcetype type="ArticleInAPeriodical">Статья периодического издания</sourcetype>
+        <sourcetype type="Book">Книга</sourcetype>
+        <sourcetype type="BookSection">Раздел книги</sourcetype>
+        <sourcetype type="Case">Дело</sourcetype>
+        <sourcetype type="ConferenceProceedings">Материалы конференции</sourcetype>
+        <sourcetype type="DocumentFromInternetSite">Электронный документ</sourcetype>
+        <sourcetype type="ElectronicSource">Электронный источник</sourcetype>
+        <sourcetype type="Film">Фильм</sourcetype>
+        <sourcetype type="InternetSite">Веб-сайт</sourcetype>
+        <sourcetype type="Interview">Интервью</sourcetype>
+        <sourcetype type="JournalArticle">Статья журнала</sourcetype>
+        <sourcetype type="Misc">Иное</sourcetype>
+        <sourcetype type="Patent">Патент</sourcetype>
+        <sourcetype type="Performance">Представление</sourcetype>
+        <sourcetype type="Report">Отчёт</sourcetype>
+        <sourcetype type="SoundRecording">Звукозапись</sourcetype>
       </sourcetypes>
     </strings>
     <extensions>
@@ -698,15 +699,15 @@
                 <!-- Else display error message. -->
                 <xsl:otherwise>
                   <xsl:if test="msxsl:node-set($data)/general/display_errors = 'yes'">
-                    <xsl:text>&lt;b&gt;Unsupported </xsl:text>
+                    <xsl:text>&lt;b&gt;Не поддерживается </xsl:text>
                     <xsl:if test="string-length($type) > 0">
-                      <xsl:text>type (</xsl:text>
+                      <xsl:text>тип (</xsl:text>
                       <xsl:value-of select="$type"/>
-                      <xsl:text>) and </xsl:text>
+                      <xsl:text>) и </xsl:text>
                     </xsl:if>
-                    <xsl:text>source type (</xsl:text>
+                    <xsl:text>тип источника (</xsl:text>
                     <xsl:value-of select="$sourcetype"/>
-                    <xsl:text>) for source </xsl:text>
+                    <xsl:text>) из источника </xsl:text>
                     <xsl:value-of select="/b:Citation/b:Source/b:Tag"/>
                     <xsl:text>.&lt;/b&gt;</xsl:text>
                   </xsl:if>
@@ -828,15 +829,15 @@
                 <!-- Else display error message. -->
                 <xsl:otherwise>
                   <xsl:if test="msxsl:node-set($data)/general/display_errors = 'yes'">
-                    <xsl:text>&lt;b&gt;Unsupported </xsl:text>
+                    <xsl:text>&lt;b&gt;Не поддерживается </xsl:text>
                     <xsl:if test="string-length($type) > 0">
-                      <xsl:text>type (</xsl:text>
+                      <xsl:text>тип (</xsl:text>
                       <xsl:value-of select="$type"/>
-                      <xsl:text>) and </xsl:text>
+                      <xsl:text>) и </xsl:text>
                     </xsl:if>
-                    <xsl:text>source type (</xsl:text>
+                    <xsl:text>тип источника (</xsl:text>
                     <xsl:value-of select="$sourcetype"/>
-                    <xsl:text>) for source </xsl:text>
+                    <xsl:text>) для источника </xsl:text>
                     <xsl:value-of select="/b:FootnoteCitation/b:Source/b:Tag"/>
                     <xsl:text>.&lt;/b&gt;</xsl:text>
                   </xsl:if>
@@ -997,15 +998,15 @@
             <!-- Else display error message. -->
             <xsl:otherwise>
               <xsl:if test="msxsl:node-set($data)/general/display_errors = 'yes'">
-                <xsl:text>&lt;b&gt;Unsupported </xsl:text>
+                <xsl:text>&lt;b&gt;Не поддерживается </xsl:text>
                 <xsl:if test="string-length($type) > 0">
-                  <xsl:text>type (</xsl:text>
+                  <xsl:text>тип (</xsl:text>
                   <xsl:value-of select="$type"/>
-                  <xsl:text>) and </xsl:text>
+                  <xsl:text>) и </xsl:text>
                 </xsl:if>
-                <xsl:text>source type (</xsl:text>
+                <xsl:text>тип источника (</xsl:text>
                 <xsl:value-of select="$sourcetype"/>
-                <xsl:text>) for source </xsl:text>
+                <xsl:text>) для источника </xsl:text>
                 <xsl:value-of select="./b:Tag"/>
                 <xsl:text>.&lt;/b&gt;</xsl:text>
               </xsl:if>
@@ -1044,7 +1045,7 @@
     <xsl:param name="bibNodeSet"/>
 
     <!-- Empty paragraph hack for table. -->
-    <p class="MsoBibliography" style="display:none;">x</p>
+    <p class="MsoBibliography" style="display:none;"></p>
 
     <table width="100%">
       <xsl:for-each select="$bibNodeSet/b:Bibliography/b:Source">
@@ -1061,7 +1062,7 @@
     </table>
 
     <!-- Empty paragraph hack for table. -->
-    <p class="MsoBibliography" style="display:none;">x</p>
+    <p class="MsoBibliography" style="display:none;"></p>
 
   </xsl:template>
 
@@ -1129,15 +1130,15 @@
         <!-- Else display error message. -->
         <xsl:otherwise>
           <xsl:if test="msxsl:node-set($data)/general/display_errors = 'yes'">
-            <xsl:text>&lt;b&gt;Unsupported </xsl:text>
+            <xsl:text>&lt;b&gt;Не поддерживается </xsl:text>
             <xsl:if test="string-length($type) > 0">
-              <xsl:text>type (</xsl:text>
+              <xsl:text>тип (</xsl:text>
               <xsl:value-of select="$type"/>
-              <xsl:text>) and </xsl:text>
+              <xsl:text>) и </xsl:text>
             </xsl:if>
-            <xsl:text>source type (</xsl:text>
+            <xsl:text>тип источника (</xsl:text>
             <xsl:value-of select="$sourcetype"/>
-            <xsl:text>) for source </xsl:text>
+            <xsl:text>) для источника </xsl:text>
             <xsl:value-of select="./b:Tag"/>
             <xsl:text>.&lt;/b&gt;</xsl:text>
           </xsl:if>
@@ -2529,7 +2530,7 @@
     <!-- A single page number or a range of page numbers. -->
     <xsl:param name="pages"/>
     <!-- Options (single page prefix:multi page prefix:extra options). -->
-    <xsl:param name="options" select="'p. :pp. '"/>
+    <xsl:param name="options" select="'с. :сс. '"/>
 
     <!-- Retrieve the single page prefix. -->
     <xsl:variable name="singlePagePrefix">
@@ -2854,13 +2855,13 @@
       <!-- Retrieve the suffix. -->
       <xsl:variable name="suffix">
         <xsl:choose>
-          <xsl:when test="$number mod 100 = 11">th</xsl:when>
-          <xsl:when test="$number mod 100 = 12">th</xsl:when>
-          <xsl:when test="$number mod 100 = 13">th</xsl:when>
-          <xsl:when test="$number mod 10 = 3">rd</xsl:when>
-          <xsl:when test="$number mod 10 = 2">nd</xsl:when>
-          <xsl:when test="$number mod 10 = 1">st</xsl:when>
-          <xsl:otherwise>th</xsl:otherwise>
+          <xsl:when test="$number mod 100 = 11">-е</xsl:when>
+          <xsl:when test="$number mod 100 = 12">-е</xsl:when>
+          <xsl:when test="$number mod 100 = 13">-е</xsl:when>
+          <xsl:when test="$number mod 10 = 3">-е</xsl:when>
+          <xsl:when test="$number mod 10 = 2">-е</xsl:when>
+          <xsl:when test="$number mod 10 = 1">-е</xsl:when>
+          <xsl:otherwise></xsl:otherwise>
         </xsl:choose>
       </xsl:variable>
 
